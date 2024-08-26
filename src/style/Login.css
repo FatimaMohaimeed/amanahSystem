@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.content-wrapper {
+    margin-top: 350px; 
+    text-align: right;
+}
+
+.left-side {
+    position: relative;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #066d66;
+    background-color: #f8f9fa; 
+    border-right: 2px solid #066d66;
+    overflow: hidden;
+    padding-top: 0; 
+}
+
+.svg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: auto;
+}
+
+.svg-container {
+    width: 100%; 
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; 
+    -webkit-transform: scaleX(-1);
+}
+
+
+.left-side h1 {
+    font-size: 2.5rem;
+    color: #066d66;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    margin-bottom: 40px;
+    color: #066d66;
+}
+
+.platforms {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.platform {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/* .left-side {
+    position: relative;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #066d66;
+    background-color: #f8f9fa; 
+    border-right: 2px solid #066d66;
+    overflow: hidden;
+} */
+
+/* .left-side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background-color: rgba(255, 255, 255, 0.312); 
+    z-index: 1;
+} */
+
+
+  
+/* .left-side * {
+    position: relative;
+    z-index: 2;
+}
+
+.left-side h1 {
+    font-size: 2.5rem;
+    color: #066d66;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    margin-bottom: 40px;
+    color: #066d66;
+} */
+/* Adjust the left-side to handle the SVG positioning */
+/* .left-side {
+    position: relative;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #066d66;
+    background-color: #f8f9fa; 
+    border-right: 2px solid #066d66;
+    overflow: hidden;
+    padding-top: 0; 
+} */
+
+/* Style for the SVG container to make it take full width and attach to the top right */
+/* .svg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: auto;
+} */
+
+/* .svg-container {
+    width: 100%;  
+    height: auto;
+    max-width: none; 
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.platforms {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.platform {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    z-index: 1;
+    position: relative;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #066d66;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #066d66;
+    font-size: 18px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.options a {
+    color: #066d66;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #066d66;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #005f70;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.register-link a {
+    color: #066d66;
+    text-decoration: none;
+}
+
+.connected-triangles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+}

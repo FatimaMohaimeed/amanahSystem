@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+/* 
+.left-side {
+    background: url('../assets/Shape.png') no-repeat center center;
+
+    background-size: cover;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    border-style: solid;
+    border-right-color: #007b8f;
+} */
+/* .left-side {
+    background: url('../assets/Shape.png') no-repeat center top; 
+    background-size: 500%; 
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #066d66;
+    border-style: solid;
+    border-right-color: #066d66;
+} */
+
+
+
+.left-side {
+    position: relative;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    background: url('../assets/1.png') no-repeat center top; /* Changed to position at the top */
+    background-size: 100%;
+    /* background-color: #066d66bb; */
+    border-right: 2px solid #066d66;
+
+}
+
+.left-side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.312);
+    z-index: 1;
+}
+
+.left-side * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.left-side h1 {
+    font-size: 2.5rem;
+    color: #066d66;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    margin-bottom: 40px;
+    color: #066d66;
+}
+
+.platforms {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.platform {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px; /* Adjust to ensure the logo is not too large */
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    z-index: 1;
+    position: relative;
+    margin-top: 50px; /* Ensure the logo does not overlap with the card */
+}
+
+h2 {
+    font-size: 24px;
+    color: #066d66;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box; /* Ensure padding does not cause overflow */
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #066d66; /* Custom color for icons */
+    font-size: 18px; /* Ensure the icon size is appropriate */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.options a {
+    color: #066d66;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #066d66;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #005f70;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.register-link a {
+    color: #066d66;
+    text-decoration: none;
+}

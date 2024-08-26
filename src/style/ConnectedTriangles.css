@@ -1,0 +1,69 @@
+/* .connected-triangles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; 
+  z-index: 0;
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid;
+}
+
+.triangle.downRight {
+  transform: rotate(0deg);
+}
+
+.triangle.upRight {
+  transform: rotate(180deg);
+}
+
+.triangle.down {
+  transform: rotate(0deg);
+}
+
+.triangle.up {
+  transform: rotate(180deg);
+} */
+
+
+
+.connected-triangles-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ba0f0f; 
+  overflow: hidden;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid;
+}
+
+.triangle.downRight {
+  transform: rotate(0deg);
+}
+
+.triangle.upRight {
+  transform: rotate(180deg);
+}
+
+.triangle.down {
+  transform: rotate(0deg);
+}
+
+.triangle.up {
+  transform: rotate(180deg);
+}
